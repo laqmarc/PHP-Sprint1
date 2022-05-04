@@ -1,0 +1,183 @@
+/* DESKTOP */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.desktop {
+    display: block;
+}
+
+.tablet {
+    display: none;
+}
+
+
+section {
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: #000;
+}
+
+.part1,
+.part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background-color: #2d4059;
+}
+
+.part2 {
+    background-color: #f07b3f;
+    margin-top: 10px;
+    display: flex;
+}
+
+.left {
+    width: 75%;
+    background-color: #4e4e6a;
+    padding: 0px 10px;
+    margin: 0px 10px 0px 0px;
+}
+
+.right {
+    width: 25%;
+    background-color: #f73f52;
+    padding: 0px 10px;
+    min-height: 140px;
+    margin: 0px 0px 0px 10px;
+
+}
+
+.part3 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+.part31 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+.part4 {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.div1 {
+    background-color: #ea5455;
+    width: 20%;
+    margin: 0px 10px;
+    padding: 10px 0px;
+}
+
+.div2 {
+    background-color: #ea5455;
+    width: 60%;
+    margin: 0px 10px;
+    padding: 10px 0px;
+}
+
+.div3 {
+    background-color: #fed460;
+    width: 100%;
+    margin: 0px 10px;
+    padding: 10px 0px;
+}
+
+.div4 {
+    background-color: #1f6cb0;
+    margin: 10px 10px;
+    padding: 10px 0px;
+    flex: 40%;
+}
+
+.div5 {
+    background-color: #70a3c4;
+    padding: 10px;
+    width: 100%;
+    margin: 0px 10px;
+}
+
+.div6 {
+    background-color: #feea85;
+    margin: 5px 10px;
+    padding: 10px 0px;
+}
+
+.div7 {
+    background-color: #e6af2e;
+    padding: 10px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 992px) {
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+
+    .flex-grid {
+        display: grid;
+        background-color: #feff03;
+
+    }
+
+    .left {
+        width: calc(100% - 20px);
+        padding: 0px 10px 10px 10px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .right {
+        width: calc(100% - 20px);
+        background-color: #f73f52;
+        padding: 0px 10px;
+        min-height: auto;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .part3 {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+    }
+
+    .part31 {
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 10px;
+        flex-wrap: wrap;
+    }
+
+
+}
