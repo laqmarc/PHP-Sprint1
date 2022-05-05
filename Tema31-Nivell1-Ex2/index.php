@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema 3-1 Nivell 3 Ex 3</title>
+    <title>Tema 3-1 Nivell 1 Ex 2</title>
 
 </head>
 
@@ -70,7 +70,7 @@ Per jugar a el "amagatall" se'ns ha demanat un programa que compti
         }
     </style>
 
-    <h1>Tema 3-1 Nivell 1 Ex 1</h1>
+    <h1>Tema 3-1 Nivell 1 Ex 2</h1>
     <p>M'amago i compto de dos en dos</p>
 
     <?php
