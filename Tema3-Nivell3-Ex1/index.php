@@ -49,7 +49,7 @@ array(10) { [0]=> string(1) "H" [1]=> string(1) "e" [2]=> string(1) "l" [3]=> st
     <p>retallant cada caràcter i eliminant les línies buides.</p>
 
     <form action="#" method="post">
-        <input type="texxt" placeholder="Posa algo" name="a"> <br>
+        <input type="text" placeholder="Posa algo" name="a"> <br>
         <input class="boto" type="submit" name="enviar">
     </form>
 
