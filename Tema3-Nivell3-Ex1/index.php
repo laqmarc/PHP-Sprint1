@@ -70,10 +70,13 @@ array(10) { [0]=> string(1) "H" [1]=> string(1) "e" [2]=> string(1) "l" [3]=> st
         
         $arrayFinal = str_split($senseEspais);
 
-        //print_r($arrayFinal);
+        if ($arrayFinal[0] == "") {
+            echo "Posa un frase";
+        }else{
         echo "<pre>";
         var_dump($arrayFinal);
         echo "</pre>";
+        }
 
     ?>
 
