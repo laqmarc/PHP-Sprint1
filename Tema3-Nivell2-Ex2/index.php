@@ -37,7 +37,7 @@
     <p>caràcter d'una cadena donada i imprimeix la nova cadena.</p>
 
     <form action="#" method="post">
-        <input type="texxt" placeholder="Posa algo" name="a"> <br>
+        <input type="text" placeholder="Posa algo" name="a"> <br>
         <input class="boto" type="submit" name="enviar">
     </form>
 
