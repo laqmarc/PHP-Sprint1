@@ -12,7 +12,7 @@
 <body>
     <style>
         span{font-size: 2rem;}
-    </style>
+    </style> 
 <?php
 echo "<h1>Tema 3 Nivell 1 Ex 2</h1>";
 /*
