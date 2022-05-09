@@ -47,6 +47,7 @@
     <p>Treballadors</p>
     <p>Calculem si el sou és més de 6000</p>
     <p>Si ha de pagar impostos o no</p>
+    <p>També guardem en un json les dades per provar</p>
 
     <form action="#" method="post">
        <input type="text" placeholder="Posa el nom" name="nom"> <br>
@@ -105,9 +106,30 @@ class Employe{
 
         $treballador = new Employe($nom, $sou);
         $pagar =  $treballador->impostos($sou);
-        echo $pagar;
+        echo $pagar."<br/>";
 
-    ?>
+$treballador = array('nom'=> $nom, 'sou'=> $sou);
+
+//Creem el JSON
+$json_string = json_encode($treballador);
+$arxiu = 'treballadors.json';
+file_put_contents($arxiu, $json_string);
+
+
+$treballadors = file_get_contents("treballadors.json");
+$treballadors = json_decode($treballadors, true);
+
+
+foreach ($treballadors as $treballador) {
+   
+    print($treballador)."<br>";
+
+}
+echo "check treballadors.json";
+
+?>
+
+
 
 </body>
 </html>
