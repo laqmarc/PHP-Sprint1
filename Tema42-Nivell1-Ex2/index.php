@@ -46,10 +46,9 @@
     <h1>Tema 4 Nivell 1 Ex 2</h1>
     <p>Calculem l'area</p>
 
-
     <form action="#" method="post">
-    <input type="number" placeholder="Posa l'ample" name="ample"> <br>
-       <input type="number" placeholder="Posa l'altura" name="altura"> <br>
+    <input type="number" placeholder="Posa l'ample" name="width"> <br>
+       <input type="number" placeholder="Posa l'altura" name="height"> <br>
        <input class="boto" type="submit" name="enviar">
        <a class="boto" href="/curso_php">RESET</a>
    </form>
@@ -58,65 +57,55 @@
 
 <?php
 
-class Shape{
+abstract class Shape{
 
-    public int $ample;
-    public int $altura;
+    protected $width;
+    protected $height;
 
-    
-    public function __construct(int $ample, int $altura){
-
-        $this->ample = $ample;
-        $this->altura = $altura;
-
-    }
-    
-    public function getAmple(){
-        return $this->$ample;
+    public function __construct($width,$height){
+        $this->width = $width;
+        $this->height = $height;
     }
 
-    public function getAltura(){
-        return $this->$altura;        
+    public function area(){
+        return $this->width * $this->height ;
     }
-   
+
 }
 
 class Triangle extends Shape{
 
-    function areaTriangle(){
-        $areaT = ($this->ample * $this->altura)/2;
-        return "L'àrea del triangle és :".$areaT.'<br/>';
+    public function area(){
+        return ($this->width * $this->height) / 2;
     }
 
 }
 
 class Rectangle extends Shape {
 
-    function areaRectangle(){
-
-        $areaR = ($this->ample * $this->altura);
-        return "L'area del rectangle és :".$areaR.'<br/>';
+    public function area(){
+        return $this->width * $this->height;
     }
+
 }
 
-$ample = 0;
-$altura = 0;
+$width = 0;
+$height = 0;
 
 if(isset($_POST['enviar'])){
 
-    $ample = $_POST["ample"];
-    $altura = $_POST["altura"];
+    $width = $_POST["width"];
+    $height = $_POST["height"];
 
 }
 
-$triangle = new Triangle($altura, $ample);
+$triangle = new Triangle($width, $height);
 
-echo $triangle->areaTriangle();
+echo 'Area del triangle '. $triangle->area().'<br>';
 
-$rectangle = new Rectangle($altura, $ample);
+$rectangle = new Rectangle($width, $height);
 
-echo $rectangle->areaRectangle();
-
+echo 'Area del rectangle '.$rectangle->area();
 
 ?>
 
